@@ -1,0 +1,23 @@
+{
+  "name": "local-file-server",
+  "version": "1.0.0",
+  "description": "For serving files on a server running on the local network. (Files are read-only)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawonAshraf/LocalFileServer.git"
+  },
+  "keywords": [
+    "fileserver",
+    "filesystem"
+  ],
+  "author": "Shawon Ashraf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShawonAshraf/LocalFileServer/issues"
+  },
+  "homepage": "https://github.com/ShawonAshraf/LocalFileServer#readme"
+}
