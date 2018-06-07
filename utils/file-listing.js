@@ -29,7 +29,7 @@ export const hbsTableListing = (items) => {
         return out
     }
     items.array.forEach(item => {
-        out += `<tr>${item}</tr>`
+        out += `<tr><a>${item}</a></tr>`
     })
 
     return out
