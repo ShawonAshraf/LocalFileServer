@@ -21,3 +21,17 @@ export const gatherFiles = (path) => {
         })
     })
 }
+
+// lists file urls in hbs view table
+export const hbsTableListing = (items) => {
+    let out = ""
+    if (items.length === 0) {
+        out = "Server has no files at the moment!"
+        return out
+    }
+    items.array.forEach(item => {
+        out += `<tr>${item}</tr>`
+    })
+
+    return out
+}
