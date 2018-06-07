@@ -1,8 +1,9 @@
 import express from "express"
 import { gatherFiles } from "./utils/file-listing"
 
+// init
 let app = express()
-const port = 3000
+const port = 9000
 
 app.get("/", (req, res) => {
     let path = "files"
@@ -12,6 +13,6 @@ app.get("/", (req, res) => {
         })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`Server Running @ PORT :: ${port}`)
 })
