@@ -22,18 +22,19 @@ app.use("/files", express.static(__dirname + "/files"))
 // public dir
 app.use(express.static(__dirname + "/public"))
 
+// replace anonymous with your preferred name
 app.get("/", (req, res) => {
     let path = "files"
     gatherFiles(path)
         .then(files => {
             res.render("index.hbs", {
                 files: files,
-                title: "rockash93's Local File Server"
+                title: "Anonymous's Local File Server"
             })
         }).catch(err => {
             res.render("bad.hbs", {
                 err: err,
-                title: "rockash93's Local File Server"
+                title: "Anonymous's Local File Server"
             })
         })
 })
