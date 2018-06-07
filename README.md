@@ -25,7 +25,13 @@ npm run start-watch
 
 ## Tests
 
-Tests are yet to be added
+```bash
+# run tests
+npm run test
+
+# run test watch using nodemon
+npm run test-watch
+```
 
 ## File Listing
 Everytime a user hits the endpoint "/", the server will fetch the list of files from `files` directory and list them in the `index` view.
