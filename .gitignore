@@ -201,4 +201,5 @@ $RECYCLE.BIN/
 
 # ignore the files dir
 files/
+dist/
 # End of https://www.gitignore.io/api/node,linux,macos,windows,webstorm+all,visualstudiocode
