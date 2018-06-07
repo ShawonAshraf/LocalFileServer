@@ -37,7 +37,7 @@ export const hbsTableListing = (files) => {
             <td class="col">${name}</td>
 
             <td class="col">
-                <a class="btn btn-success" href="${path}/${name}">Download</a>
+                <a class="btn btn-success" href="${path}/${name}"></a>
             </td>
         </tr>`
     })
