@@ -19,6 +19,9 @@ hbs.registerPartials(__dirname + "/views/partials")
 // static dir for files
 app.use("/files", express.static(__dirname + "/files"))
 
+// public dir
+app.use(express.static(__dirname + "/public"))
+
 app.get("/", (req, res) => {
     let path = "files"
     gatherFiles(path)
