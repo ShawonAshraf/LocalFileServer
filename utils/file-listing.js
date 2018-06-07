@@ -22,14 +22,24 @@ export const gatherFiles = (path) => {
 }
 
 // lists file urls in hbs view table
-export const hbsTableListing = (items) => {
+export const hbsTableListing = (files) => {
     let out = ""
-    if (items.length === 0) {
+    if (files.length === 0) {
         out = "Server has no files at the moment!"
         return out
     }
-    items.array.forEach(item => {
-        out += `<tr><a>${item}</a></tr>`
+    files.forEach(file => {
+        let fileInfo = file["fileName"].split("/")
+
+        let path = fileInfo[0]
+        let name = fileInfo[1]
+        out += `<tr class="row">
+            <td class="col">${name}</td>
+
+            <td class="col">
+                <a class="btn btn-success" href="${path}/${name}">Download</a>
+            </td>
+        </tr>`
     })
 
     return out
