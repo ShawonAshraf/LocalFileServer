@@ -4,11 +4,12 @@ import expect from "expect"
 import app from "../server"
 
 describe("GET /", () => {
-    it("Should fetch the nonempty response object on request", (done) => {
+    it("Should return 200 as status", (done) => {
         request(app)
-            .get("/")
-            .expect(res => {
-                expect(res.body).toBeTruthy()
+            .get("/status")
+            .expect(200)
+            .expect((res) => {
+                expect(res.body).toExist()
                 done()
             })
             .catch(err => done(err))

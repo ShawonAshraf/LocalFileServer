@@ -39,6 +39,12 @@ app.get("/", (req, res) => {
         })
 })
 
+app.get("/status", (req, res) => {
+    res.status(200).send({
+        status: "OK"
+    });
+})
+
 app.listen(port, () => {
     console.log(`Server Running @ PORT :: ${port}`)
 })
