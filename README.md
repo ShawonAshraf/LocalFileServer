@@ -1,6 +1,8 @@
 # LocalFileServer
 > Creates a read only file server to be used for sharing files locally
 
+[![Build Status](https://travis-ci.org/ShawonAshraf/LocalFileServer.svg?branch=master)](https://travis-ci.org/ShawonAshraf/LocalFileServer)
+
 ## Screenshot
 
 ![Imgur](https://i.imgur.com/yEr9dNd.png)
