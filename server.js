@@ -32,12 +32,12 @@ app.get('/', (req, res) => {
     .then((files) => {
       res.render('index.hbs', {
         files,
-        title: "Anonymous's Local File Server",
+        title: 'Local File Server',
       });
     }).catch((err) => {
       res.render('bad.hbs', {
         err,
-        title: "Anonymous's Local File Server",
+        title: 'Local File Server',
       });
     });
 });
@@ -49,6 +49,7 @@ app.get('/status', (req, res) => {
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server Running @ PORT :: ${port}`);
 });
 
