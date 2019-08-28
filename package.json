@@ -7,9 +7,7 @@
     "start": "yarn run build && node dist/server.js",
     "start-watch": "nodemon --exec babel-node -- server",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "test": "mocha --require @babel/register ./**/*.test.js --exit",
-    "test-watch": "export NODE_ENV=test && nodemon --exec \"yarn run test\"",
-    "eslint-setup": "./node_modules/.bin/eslint --init"
+    "eslint-setup": "eslint --init"
   },
   "repository": "git+https://github.com/ShawonAshraf/LocalFileServer.git",
   "keywords": [
@@ -37,9 +35,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "expect": "^1.20.2",
-    "mocha": "^5.2.0",
     "nodemon": "^1.17.5",
-    "rimraf": "^3.0.0",
-    "supertest": "^3.1.0"
+    "rimraf": "^3.0.0"
   }
 }
