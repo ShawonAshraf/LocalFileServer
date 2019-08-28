@@ -5,7 +5,7 @@
 
 ## Screenshot
 
-![Imgur](https://imgur.com/Jd8WePP)
+![Imgur](https://imgur.com/Jd8WePP.png)
 
 ## Usage
 
