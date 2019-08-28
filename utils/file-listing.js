@@ -1,3 +1,5 @@
+import '@babel/polyfill';
+
 import { join } from 'path';
 import { readdir, stat } from 'fs';
 import { promisify } from 'util';
