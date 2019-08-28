@@ -15,25 +15,16 @@
 
 ```bash
 # install dependencies
-npm install
+yarn install
 
 # start
-npm start
+yarn start
 
 # watch for file changes using nodemon
-npm run start-watch
+yarn run start-watch
 ```
-- Open your browser and navigate to [http://localhost:9000](http://localhost:9000)
+- Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
-## Tests
-
-```bash
-# run tests
-npm run test
-
-# run test watch using nodemon
-npm run test-watch
-```
 
 ## File Listing
 Everytime a user hits the endpoint "/", the server will fetch the list of files from `files` directory and list them in the `index` view.
