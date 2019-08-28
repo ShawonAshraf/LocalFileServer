@@ -24,7 +24,7 @@
   "homepage": "https://github.com/ShawonAshraf/LocalFileServer#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "hbs": "^4.0.4",
+    "express-hbs": "^2.1.2",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
